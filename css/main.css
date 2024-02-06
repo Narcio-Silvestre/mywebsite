@@ -71,6 +71,10 @@ body{
     color: #f9f7f7;
 }
 
+h1{
+    font-family: serif;
+}
+
 .intro {
     background: rgb(11,11,17);
     background: linear-gradient(90deg, rgba(11,11,17,1) 0%, rgba(9,9,9,1) 35%, rgba(17,14,14,1) 100%);
@@ -102,8 +106,8 @@ body{
 }
 
 .quadriple_items > div > p{
-    font-size: 1.5rem;
-    font-family: serif;
+    font-size: 1.2rem;
+    font-family: sans-serif;
     
 }
 .circles_item{
@@ -116,6 +120,7 @@ body{
     justify-content: center;
     align-items: center;
     transition: border 0.5s ease-in-out;
+    border: #f9f7f7 solid 0.1rem;
 
 }
 
@@ -129,7 +134,7 @@ body{
 
 .circles_item :hover{
    
-    border: #f9f7f7 solid 0.1rem;
+    border: #f9f7f7 solid 0.2rem;
 
 }
 
@@ -163,18 +168,9 @@ body{
         display: none;
     }
 
-    .intro   {
-        
-        justify-content: center;
-        align-items: center;
-        font-size: 1rem;
-        display: flex;
-        gap: 2rem;
-        
-        
-    }
+    
 
-   
+    
 
     .intro_circles{
         display: flex;
