@@ -9,7 +9,7 @@ body{
     background-color: #000;
     display: grid;
     grid-template-columns: 1fr ;
-    grid-template-rows: 0.35fr 4fr 0.25fr;
+    grid-template-rows: 0.35fr 6fr 0.25fr;
     font-family: "Montserrat", sans-serif;
 
 }
@@ -67,17 +67,70 @@ body{
 
 .main{
     display: grid;
-    grid-template: 1fr 1fr/1fr;
+    grid-template: 1fr/1fr;
+    color: #f9f7f7;
 }
 
 .intro {
-    background-color: #dbe2ef;
+    background: rgb(11,11,17);
+    background: linear-gradient(90deg, rgba(11,11,17,1) 0%, rgba(9,9,9,1) 35%, rgba(17,14,14,1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 2rem;
     font-size: 1rem;
+}
+
+.intro_circles{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.quadriple_items{
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    height: 15rem;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    transition: border 0.5s ease-in-out;
+
+}
+
+.quadriple_items > div > p{
+    font-size: 1.5rem;
+    font-family: serif;
+    
+}
+.circles_item{
+    display: flex;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    color: white;
+    background-color: #112d4e;
+    justify-content: center;
+    align-items: center;
+    transition: border 0.5s ease-in-out;
+
+}
+
+.circles_item > img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 12rem;
+    width: 12rem;
+
+}
+
+.circles_item :hover{
+   
+    border: #f9f7f7 solid 0.1rem;
+
 }
 
 .passion{
@@ -113,14 +166,21 @@ body{
     .intro   {
         
         justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        display: flex;
+        gap: 2rem;
         
         
     }
 
-    .intro > p{
-        text-justify: distribute-all-lines;
-    }
+   
 
+    .intro_circles{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
     
 
     .footer {
