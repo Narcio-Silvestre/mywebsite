@@ -17,5 +17,3 @@ function scrolling(e){
     const node = document.querySelector(`${sect}`)
     node.scrollIntoView({behavior:"smooth"})
 }
-
-
