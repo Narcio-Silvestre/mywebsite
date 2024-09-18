@@ -25,7 +25,15 @@ body{
     background-color: #ffffff;
 }
 
+
+.section_hidden{
+    opacity: 0;
+    transform: translateY(8rem);
+}
+
+
 section{
+    transition: transform 1s, opacity 1s;
     min-height: 100vh;
 }
 
@@ -46,7 +54,9 @@ h2{
 
 
 
-
+.nav_sup {
+    opacity: 0;
+}
 
 .nav {
     position: fixed;
@@ -55,6 +65,7 @@ h2{
     z-index: 101;
     width: 100%;
     background-color: #ffffff;
+    transition: opacity 1.25s;
 }
 
 
@@ -93,8 +104,6 @@ h2{
 
 
 
-
-
 .section_1{
     
     position: relative;
@@ -130,6 +139,8 @@ h2{
     transition: 0.5s ease-in-out;
     z-index: 100;
 }
+
+
 
 .section_1 >.content> p{
     font-size: 1.5rem;
@@ -251,8 +262,8 @@ a > .card_sect3{
     box-shadow: rgba(0,0,0, 1) 0px 5px 15px;
 
     background: rgb(192,180,169);
-background: linear-gradient(299deg, rgba(192,180,169,0.55) 0%, rgba(189,167,140,0.55) 50%);
-    transition: 0.1s ease-in-out;
+    background: linear-gradient(299deg, rgba(192,180,169,0.55) 0%, rgba(189,167,140,0.55) 50%);
+    transition: box-shadow 0.5s ,color 0.5s;
 }
 
 a > .card_sect3:hover{
