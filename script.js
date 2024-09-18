@@ -46,14 +46,7 @@ section.forEach((e) =>{
 
 function sect1Obser (entries, observer){
     const [f] = entries;
-    if(f.isIntersecting) {
-        nav.classList.remove('nav_sup');
-        return true;
-    } 
-    else {
-        nav.classList.add('nav_sup');
-        return false;
-    }
+    f.isIntersecting ? nav.classList.remove('nav_sup') : nav.classList.add('nav_sup');
 }
 
 let section1_obser = new IntersectionObserver(sect1Obser,{
