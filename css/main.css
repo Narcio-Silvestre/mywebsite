@@ -399,6 +399,10 @@ Dispositivos extragrandes	1200px e acima
         display: none;
     }
 
+
+    section{
+        max-width: 100vh;
+    }
     
    .nav{
         justify-content: flex-start
