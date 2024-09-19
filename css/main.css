@@ -387,13 +387,7 @@ Dispositivos extragrandes	1200px e acima
 *******/
 
 @media (max-width:375px) {
-    h1{
-        font-size: 2rem;
-    }
-    
-    h2{
-        font-size: 1.5rem;
-    }
+ 
 
     .nav>ul{
         display: none;
@@ -408,38 +402,36 @@ Dispositivos extragrandes	1200px e acima
         justify-content: flex-start
    } 
     
-    .nav > a > img{
-        height: 1.5rem;
-    }
-
-    .nav > ul  {
-        font-size: 1rem;
-        gap: 0.8rem;
-        margin-right: 0px;
-    }
+    
 
     .content{
-        top: 20%;
+        top: 17%;
+        left: 14%;
         gap: 0.5rem;
     }
 
     
 
     .section_1 >.content> p{
-        font-size: 0.85rem;
+        font-size: 1rem;
     }
 
     .section_1 > .img-inicial > img {
         width: 95%;
         height: 16rem;
         object-fit:cover;
-        top: 45%;
+        top: 50%;
         left: 2%;
+    }
+
+    .section_2{
+        grid-template: 0.35fr 2fr/1fr;
     }
 
     .section_2_content{
         flex-direction: column;
         gap: 0.5rem;
+        
     }
 
     .section_3{
@@ -458,7 +450,7 @@ Dispositivos extragrandes	1200px e acima
     .section4_img{
     width: 8rem;
     left: 23%;
-    top: 42rem;
+    top: 43rem;
     }
 
     .section4_img > img{
@@ -467,8 +459,8 @@ Dispositivos extragrandes	1200px e acima
 
     .section4_desc{
         gap: 9rem;
-        width: 20rem;
-        top: 5%;
+        width: 17rem;
+        top: 3%;
         right: 9%;
 
     }
