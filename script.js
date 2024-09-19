@@ -65,4 +65,6 @@ nav.addEventListener('mouseout',e=>{
 })
 
 
-
+document.querySelectorAll('img').forEach(e=>{
+    e.setAttribute('loading','lazy')
+})
