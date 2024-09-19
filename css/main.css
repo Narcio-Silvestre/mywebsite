@@ -388,7 +388,13 @@ Dispositivos extragrandes	1200px e acima
 
 @media (max-width:375px) {
  
-
+    h1{
+        font-size: 2rem;
+    }
+    
+    h2{
+        font-size: 1.5rem;
+    }
     .nav>ul{
         display: none;
     }
