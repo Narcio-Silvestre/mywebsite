@@ -405,7 +405,7 @@ Dispositivos extragrandes	1200px e acima
     
 
     .content{
-        top: 17%;
+        top: 15%;
         left: 14%;
         gap: 0.5rem;
     }
@@ -420,7 +420,7 @@ Dispositivos extragrandes	1200px e acima
         width: 95%;
         height: 16rem;
         object-fit:cover;
-        top: 60%;
+        top: 65%;
         left: 2%;
     }
 
@@ -450,7 +450,7 @@ Dispositivos extragrandes	1200px e acima
     .section4_img{
     width: 8rem;
     left: 20%;
-    top: 46rem;
+    top: 48rem;
     }
 
     .section4_img > img{
@@ -458,7 +458,7 @@ Dispositivos extragrandes	1200px e acima
     }
 
     .section4_desc{
-        gap: 11rem;
+        gap: 14rem;
         width: 17rem;
         top: 3%;
         right: 9%;
