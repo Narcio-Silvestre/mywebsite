@@ -453,18 +453,17 @@ Dispositivos extragrandes	1200px e acima
 
     .section4_img{
     width: 8rem;
-    top: 90%;
-    left: 13%;
+    left: 23%;
+    top: 42rem;
     }
 
     .section4_img > img{
-        height: 20rem;
+        height: 15rem;
     }
 
     .section4_desc{
-        gap: 10rem;
+        gap: 9rem;
         width: 20rem;
-        height: 25rem;
         top: 5%;
         right: 9%;
 
