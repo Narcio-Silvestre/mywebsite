@@ -420,12 +420,12 @@ Dispositivos extragrandes	1200px e acima
         width: 95%;
         height: 16rem;
         object-fit:cover;
-        top: 50%;
+        top: 60%;
         left: 2%;
     }
 
     .section_2{
-        grid-template: 0.35fr 2fr/1fr;
+        grid-template: 0.5fr 2fr/1fr;
     }
 
     .section_2_content{
@@ -450,7 +450,7 @@ Dispositivos extragrandes	1200px e acima
     .section4_img{
     width: 8rem;
     left: 20%;
-    top: 43rem;
+    top: 46rem;
     }
 
     .section4_img > img{
@@ -458,7 +458,7 @@ Dispositivos extragrandes	1200px e acima
     }
 
     .section4_desc{
-        gap: 9rem;
+        gap: 11rem;
         width: 17rem;
         top: 3%;
         right: 9%;
