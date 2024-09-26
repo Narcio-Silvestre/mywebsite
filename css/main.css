@@ -388,6 +388,14 @@ position: absolute;
     font-size: 6rem;
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+}
 /*Media Queries*/
 
 @media (max-width:375px) {
