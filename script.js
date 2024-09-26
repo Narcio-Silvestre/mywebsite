@@ -3,7 +3,12 @@ const section = document.querySelectorAll("section");
 const nav = document.querySelector('.nav');
 const logo = document.querySelector('.logo');
 
+
 document.querySelector('#moreLink').addEventListener('click',e => scrolling(e))
+document.querySelectorAll('img').forEach(e=>{
+    e.setAttribute('loading','lazy')
+})
+
 
 logo.addEventListener('click',e =>{
     e.preventDefault()
@@ -15,6 +20,16 @@ logo.addEventListener('click',e =>{
 nav.addEventListener('click',e =>{
     if(e.target.classList.contains('nav-item')) scrolling(e)
 })
+
+nav.addEventListener('mouseover',e=>{
+    nav.classList.remove('nav_sup')
+})
+
+nav.addEventListener('mouseout',e=>{
+    const sec1Bot = sect1.getBoundingClientRect().bottom
+    if(sec1Bot<0) nav.classList.add('nav_sup')
+})
+
 
 function scrolling(e){
     e.preventDefault()
@@ -28,6 +43,7 @@ function sectObser(entries,observer){
     if(!first.isIntersecting) return;
     first.target.classList.remove('section_hidden');
     observer.unobserve(first.target);
+
 }
 
 let section_obser = new IntersectionObserver(sectObser,{
@@ -36,17 +52,16 @@ let section_obser = new IntersectionObserver(sectObser,{
 });
 
 section.forEach((e) =>{
- if(e.getAttribute('class')!= sect1.getAttribute('class')){
-    section_obser.observe(e)
-    e.classList.add('section_hidden');
- }
+    if(e.getAttribute('class')!== sect1.getAttribute('class')){
+        e.classList.add('section_hidden');
+        section_obser.observe(e)
+    }
 }
 )
 
-
 function sect1Obser (entries, observer){
     const [f] = entries;
-    f.isIntersecting ? nav.classList.remove('nav_sup') : nav.classList.add('nav_sup');
+    f.isIntersecting ? nav.classList.remove('nav_sup') : nav.classList.add('nav_sup');    
 }
 
 let section1_obser = new IntersectionObserver(sect1Obser,{
@@ -55,16 +70,4 @@ let section1_obser = new IntersectionObserver(sect1Obser,{
 });
 section1_obser.observe(sect1)
 
-nav.addEventListener('mouseover',e=>{
-    nav.classList.remove('nav_sup')
-})
 
-nav.addEventListener('mouseout',e=>{
-    const sec1Bot = sect1.getBoundingClientRect().bottom
-    if(sec1Bot<0) nav.classList.add('nav_sup')
-})
-
-
-document.querySelectorAll('img').forEach(e=>{
-    e.setAttribute('loading','lazy')
-})
