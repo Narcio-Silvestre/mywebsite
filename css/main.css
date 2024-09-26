@@ -458,7 +458,12 @@ position: absolute;
         display: none;
     }
 
-    
+    .section4_desc{
+        gap: 11rem;
+        width: 17rem;
+        top: 3%;
+        right: 9%;
+    }
 
     .section_5{
         margin-top: 2rem;
