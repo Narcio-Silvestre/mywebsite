@@ -465,6 +465,10 @@ position: absolute;
         right: 9%;
     }
 
+    section4_icon{
+        margin-top: 1rem;
+    }
+
     .section_5{
         margin-top: 2rem;
         justify-content: center;
