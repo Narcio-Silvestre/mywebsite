@@ -452,11 +452,7 @@ position: absolute;
         justify-items: center;
     }
 
-    .section4_img{
-    width: 8rem;
-    left: 20%;
-    top: 48rem;
-    }
+    
 
     .section4_img > img{
         display: none;
@@ -470,6 +466,7 @@ position: absolute;
     }
 
     .section_5{
+        margin-top: 2rem;
         justify-content: center;
     }
     
