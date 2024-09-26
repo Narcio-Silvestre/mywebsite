@@ -30,6 +30,13 @@ nav.addEventListener('mouseout',e=>{
     if(sec1Bot<0) nav.classList.add('nav_sup')
 })
 
+document.querySelector('.card5_items').addEventListener('click',(e)=>{
+    if(e.target.tagName === 'I'){
+        const a = e.target.parentNode.querySelector('a');
+        window.open(a.getAttribute('href'))
+    }
+})
+
 
 function scrolling(e){
     e.preventDefault()
